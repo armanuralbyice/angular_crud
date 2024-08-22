@@ -1,0 +1,21 @@
+<div class="center-form">
+  <img src="../../../../assets/Gold%20Exclusive%20Royal%20Luxury%20Hotel%20Logo.png" alt="logo">
+  <h2>Enter Details To Register</h2>
+  <form nz-form [formGroup]="loginForm" (ngSubmit)="submitForm()" *ngIf="submitForm">
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Enter your email!">
+        <nz-input-group nzPrefixIcon="user">
+          <input nz-input formControlName="email" type="email" placeholder="Enter email">
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Enter your password!">
+        <nz-input-group nzPrefixIcon="lock">
+          <input nz-input formControlName="password" type="password" placeholder="Enter password">
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <button nz-button nzType="primary" nzBlock [disabled]="loginForm.invalid" class="signupBtn">Login</button>
+  </form>
+</div>

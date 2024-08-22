@@ -1,0 +1,16 @@
+.room-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.post-room-btn{
+ margin-top: 20px;
+  margin-left: 18px;
+}
+.icon{
+  font-size: 30px;
+}
+.center-form{
+  height: 100vh;
+}

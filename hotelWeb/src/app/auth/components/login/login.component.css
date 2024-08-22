@@ -1,0 +1,48 @@
+.center-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: #fff;
+}
+
+.center-form img {
+  max-width: 200px;
+  max-height: 120px;
+  margin-bottom: 20px;
+}
+
+.center-form h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  border: none;
+  width: 400px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+nz-form-item {
+  width: 300px
+}
+
+.signupBtn {
+  width: 300px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .center-form {
+    padding: 10px;
+  }
+}
